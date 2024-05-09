@@ -1,0 +1,41 @@
+\documentclass{article}
+% Add xcolor package for cellcolor
+\usepackage[table]{xcolor}
+
+\begin{document}
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			\textbf{Time} & \textbf{Mon} & \textbf{Tue} & \textbf{Wed} & \textbf{Thu} & \textbf{Fri} & \textbf{Sat}\\
+			\hline
+			slot-1 &  &  & \cellcolor{red}B &  &  & \\
+			\hline
+			slot-2 & \cellcolor{orange!80}C & \cellcolor{yellow}E & \cellcolor{red}B & \cellcolor{blue!35}A & \cellcolor{orange!80}C & \\
+			\hline
+			slot-3 & \cellcolor{blue!35}A & \cellcolor{yellow}E & \cellcolor{blue!35}A & \cellcolor{blue!35}A & \cellcolor{orange!80}C & \\
+			\hline
+			slot-4 &  & \cellcolor{green}X & \cellcolor{green}X &  &  & \\
+			\hline
+			% Merging all columns into one for the lunch break row
+			 \multicolumn{7}{|c|}{lunch break} \\
+			\hline
+			slot-5 & \cellcolor{green}X & \cellcolor{blue!20} &\cellcolor{red} &\cellcolor{yellow}  &\cellcolor{
+				blue!80}  & \\			\cline{1-2} \cline{7-1}
+			slot-6 & \cellcolor{yellow}E &\cellcolor{blue!20} Y &\cellcolor{red} B &\cellcolor{yellow} F &\cellcolor{
+			blue!80} D & \\
+			\cline{1-2} \cline{7-1}
+			slot-7 &  &\cellcolor{blue!20}  &\cellcolor{red}  &\cellcolor{yellow}  &\cellcolor{
+				blue!80} & \\
+			\hline
+			slot-8 &  &  &  &  & & \\
+			\hline
+			
+			
+			
+		\end{tabular}
+	\caption{C4 Time Table}
+	\label{tab:example}
+	
+	\end{table}
+\end{document}
